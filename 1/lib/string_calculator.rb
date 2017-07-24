@@ -5,5 +5,6 @@ class StringCalculator
 
   def calc
     return 0 if @numbers == ""
+    return @numbers.to_i unless @numbers.include? ","
   end
 end
