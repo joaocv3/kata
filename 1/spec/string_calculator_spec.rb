@@ -49,5 +49,13 @@ RSpec.describe StringCalculator do
         expect(result).to eq  35
       end
     end
+
+    context "with different chars to separate numbers" do
+      let(:result) { StringCalculator.new("1; 1 & 1* 1 , 1").calc }
+
+      it "returns the sum result" do
+        expect(result).to eq  5
+      end
+    end
   end
 end

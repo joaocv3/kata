@@ -20,5 +20,3 @@ class StringCalculator
     numbers.split(/[^0-9]/)
   end
 end
-
-#StringCalculator.new("32,23,123,132\n312").calc
