@@ -7,8 +7,10 @@ class StringCalculator
     return 0 if @numbers == ""
     return @numbers.to_i unless @numbers.include? ","
 
-
-    numbers = @numbers.split(",")
-    numbers.first.to_i + numbers.last.to_i 
+    total = 0
+    @numbers.split(",").each do |number|
+      total += number.to_i
+    end
+    total
   end
 end
